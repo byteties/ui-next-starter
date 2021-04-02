@@ -1,4 +1,3 @@
-import Header from './Header'
 import styles from '../styles/components/layout.module.scss'
 
 export default function Layout({ children }) {
