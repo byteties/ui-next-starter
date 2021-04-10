@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Layout from '../components/Layout'
-import Header from '../components/Header'
 
 export default function Home() {
   return (
@@ -9,7 +8,6 @@ export default function Home() {
         <title>Bigbyte</title>
         <link rel="icon" href="/favicon.ico" />
     </Head>
-    <Header/>
     <Layout />
     </>
   )

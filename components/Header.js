@@ -1,28 +1,32 @@
 import styles from '../styles/components/header.module.scss'
+import { Button,Layout,Row, Col } from 'antd'
 
-export default function Header() {
+const { Header } = Layout;
+
+
+export default function HeaderMain() {
   return (
-    <div className={styles.container}>
-      <div className="row justify-content-between">
-          <div className="col-3">
-            <a className={styles.text}>Logo</a>
-          </div>
-          <div className="col-6 text-center">
-            <div className="row justify-content-around">
-              <div className="col"><a className={styles.tabbar}>Product</a></div>
-              <div className="col"><a className={styles.tabbar}>Solution</a></div>
-              <div className="col"><a className={styles.tabbar}>Pricing</a></div>
-              <div className="col"><a className={styles.tabbar}>Company</a></div>
-              <div className="col"><a className={styles.tabbar}>Contract</a></div>
-            </div>
-          </div>
-          <div className="col-3 align-items-end">
-            <div className="d-flex justify-content-end">
-              <a className={styles.text}>SignIn</a>
-              <a className={styles.text}>SignUp</a>
-            </div>
-          </div>
-      </div>
-    </div>
+    <Header className={styles.container}>
+      <Row >
+        <Col span={6}>
+          <a className={styles.text}>Logo</a>
+        </Col>
+        <Col span={12}>
+          <Row justify="space-around" align="middle">
+            <Col ><a className={styles.text}>Product</a></Col>
+            <Col ><a className={styles.text}>Solution</a></Col>
+            <Col ><a className={styles.text}>Pricing</a></Col>
+            <Col ><a className={styles.text}>Company</a></Col>
+            <Col ><a className={styles.text}>Contract</a></Col>
+          </Row>
+        </Col>
+        <Col span={6}>
+          <Row justify="end">
+            <Col ><a className={styles.text}>SignIn</a></Col>
+            <Col ><a className={styles.text}>SignUp</a></Col>
+          </Row>
+        </Col>
+      </Row>
+    </Header>
   )
 }
