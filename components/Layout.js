@@ -1,6 +1,10 @@
-import { Button,Layout } from 'antd'
+import { Button,Layout,Card,Row,Col } from 'antd'
 import styles from '../styles/components/layout.module.scss'
 import Header from '../components/Header'
+import Conversation from '../public/images/card-conversation-ai.svg'
+import Relevance from '../public/images/card-relevance-personalization.svg'
+import Retail from '../public/images/card-retail.svg'
+import Car from '../public/images/card-self-driving-cars.svg'
 
 const { Content } = Layout;
 
@@ -10,31 +14,39 @@ export default function LayoutMain({ children }) {
     <>
     <Layout>
       <Header />
-      <Content>
-        <div className={styles.container}>
-        <div className={styles.main}>
-          <h1 >
-            <a>Welcome to Shop Management</a>
-          </h1>
-
-          <p >
-            ร้านค้าขนมและเครื่องดื่ม
-          </p>
-          <div className="row">
-            <div className="col">
-              <Button type="primary" shape="round" size="large">Get Started</Button>
-            </div>
-            <div className="col">
-              <Button type="primary" shape="round" size="large">Talk To Us</Button>
-            </div>
-          </div>
-          <div className={styles.grid}>
-              <a className={styles.card}>
-                <h4>สินค้าทั้งหมด &rarr;</h4>
-              </a>
-          </div>
+      <Content className={styles.container}>
+        <div className={styles.body}>
+          <Row className={styles.section}>
+            <Col span={12}>
+              <Row><h1>Welcome to Shop Management</h1></Row>
+              <Row>ร้านค้าขนมและเครื่องดื่ม</Row>
+            </Col>
+            <Col span={12}>
+              <Row className={styles.row} justify="end" align="middle">
+                <Col>                
+                  <Button type="primary" shape="round" size="large">Get Started</Button>
+                </Col>
+                <Col offset={2}>
+                  <Button type="primary" shape="round" size="large">Talk To Us</Button>
+                </Col>
+              </Row>
+            </Col>
+          </Row>
+          <Row className={styles.section}>
+            <Card className={styles.card}>
+              <Conversation className={styles.svg}/>
+            </Card>
+            <Card className={styles.card}>
+              <Relevance className={styles.svg}/>
+            </Card>
+            <Card className={styles.card}>
+              <Retail className={styles.svg}/>
+            </Card>
+            <Card className={styles.card}>
+              <Car className={styles.svg}/>
+            </Card>
+          </Row>
         </div>
-      </div>
       </Content>
     </Layout>
     

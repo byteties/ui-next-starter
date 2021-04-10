@@ -22,8 +22,8 @@ export default function HeaderMain() {
         </Col>
         <Col span={6}>
           <Row justify="end">
-            <Col ><a className={styles.text}>SignIn</a></Col>
-            <Col ><a className={styles.text}>SignUp</a></Col>
+            <Col ><a className={styles.text}>Sign In</a></Col>
+            <Col ><a className={styles.text}>Sign Up</a></Col>
           </Row>
         </Col>
       </Row>

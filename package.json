@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "antd": "^4.15.0",
+    "babel-plugin-inline-react-svg": "^2.0.1",
     "bootstrap": "^5.0.0-beta3",
     "next": "^10.0.0",
     "react": "17.0.1",
