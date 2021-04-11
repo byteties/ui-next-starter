@@ -5,28 +5,37 @@
   flex-direction: column;
   // justify-content: center;
   align-items: center;
-  // background-color:whitesmoke;
+  background-color:#E9D7C3;
 
   .body{
     padding-top: 10%;
+    width:100%;
 
     .section{
-      margin: 5% 0;
+      margin:0 10%;
 
-      .card{
-        width: 240px;
-        display: table-cell;
-        
-        .svg{
-          width:  100%;
-          height: 100%;          
+      .start {
+        background-color: black;
+
+        p{
+          color:white;
         }
       }
-      
 
       .row{
         width: 100%;
         height: 100%;
+      }
+    }
+
+    .section:nth-child(2){
+      margin: 0;
+      width: 100%;
+      padding: 10% 0 5% 0;
+      background-color: #E9D7C3;
+
+      .card{
+        border: 5px solid whitesmoke;
       }
     }
   }
