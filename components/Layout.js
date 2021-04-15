@@ -22,6 +22,31 @@ export default function LayoutMain({ children }) {
             <Col span={12}>
               <Row><h1>Chayangkoon Dokhom</h1></Row>
               <Row><h5>It' s my beginning website for me</h5></Row>
+              <Row>
+                <Col span={2}>
+                  <a href="https://www.facebook.com/byteties/">
+                    <Image
+                      src="/images/facebook.png"
+                      width={30}
+                      height={30} 
+                    />
+                  </a>
+                </Col>
+                <Col span={2}>
+                  <Image
+                    src="/images/linkedin.png"
+                    width={30}
+                    height={30} 
+                  />
+                </Col>
+                <Col span={2}>
+                  <Image
+                    src="/images/instagram.png"
+                    width={30}
+                    height={30} 
+                  />
+                </Col>
+              </Row>
             </Col>
             <Col span={12}>
               <Row className={styles.row} justify="end" align="middle">
